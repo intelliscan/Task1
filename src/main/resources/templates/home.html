@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head th:include="layout :: head(title=~{::title},links=~{})">
+		<title>All the passwords!</title>
+	</head>
+	<body th:include="layout :: body" th:with="content=~{::content}">
+		<div th:fragment="content">
+			Welcome to MagpieVault, your secure password store!
+			<div class="websites">
+				<div class="website" th:each="website : ${websites}">
+       				<h3 th:text="${website.name}"></h3>
+       				<span th:text="'URL: ' + ${website.url}"></span>
+       				<span th:text="'Username: '+${website.userName}"></span>
+       				<span th:text="'Password: '+${website.password}"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
