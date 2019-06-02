@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>de.upb.magpiebridge</groupId>
-	<artifactId>vault</artifactId>
+	<artifactId>passwordManager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>vault</name>
+	<name>passwordManager</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
